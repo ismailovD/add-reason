@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.min.css">
+        <link rel="icon" href="./images/icon/favicon.ico">  
+        <title>Add Reason</title>
+    </head>
+    <body class="body">
+
+        <aside class="side-bar active">
+            
+            <div class="side-bar__center">
+                <span class="side-bar__btn">
+                    <svg class="side-bar__btn-icon">
+                        <use xlink:href="./svg/sprite.svg#open-btn"></use>
+                    </svg>
+                </span>
+                <a href="" class="side-bar__logo">
+                    <picture class="side-bar__pic">
+                        <img src="./images/logotype.webp"
+                            class="side-bar__logo-img"
+                            alt="side-bar">
+                        <img src="./images/logo.webp" alt="mini-logo"
+                            class="side-bar__img">
+                    </picture>
+
+                </a>
+                <ul class="side-bar__list">
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#home"></use>
+                            </svg>
+                            <span class="side-bar__link-text">Home</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link ">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#analystics"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Analystics</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item visited">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#returns"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Returns</span>
+                        </a>
+                        <span class="side-bar__count" data-count="16">16</span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#orders"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Risky Orders</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use
+                                    xlink:href="./svg/sprite.svg#integrations"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Integrations</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#store"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Store Credits</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#automation"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Automation</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                </ul>
+                <div class="side-bar__settings ">
+                    <svg class="side-bar__icon">
+                        <use xlink:href="./svg/sprite.svg#settings"></use>
+                    </svg>
+                    <div class="side-bar__dropdown">
+                        <span class="side-bar__dropdown-btn">Settings
+                        </span>
+                        <svg class="side-bar__dropdown-icon">
+                            <use
+                                xlink:href="./svg/sprite.svg#arrow-down"></use>
+                        </svg>
+                        <ul class="side-bar__dropdown-list">
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Profile</a>
+                            </li>
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Log out</a>
+                            </li>
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Log in</a>
+                            </li>
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Log out</a>
+                            </li>
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Upgrades</a>
+                            </li>
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Your stars</a>
+                            </li>
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Your Like`s</a>
+                            </li>
+                            <li class="side-bar__dropdown-item ">
+                                <a href="#!" class="side-bar__link global-item">Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#!" class="side-bar__link side-bar__help global-item">
+                <svg class="side-bar__help-icon">
+                    <use xlink:href="./svg/sprite.svg#unknown"></use>
+                </svg>
+                <span class="side-bar__link-text"> Help Center</span>
+            </a>
+        </aside>
+        <div class="global__content">
+            <header class="global__header">
+                <form class="global__form">
+                    <label class="global__search">
+                        <svg class="global__search-icon">
+                            <use xlink:href="./svg/sprite.svg#search"></use>
+                        </svg>
+                        <input class="global__search-input" type="text"
+                            placeholder="Search...">
+                    </label> 
+                </form>
+                <div class="global__wrapper">
+                <div class="global__notification">
+                    <svg class="global__notification-icon">
+                        <use xlink:href="./svg/sprite.svg#bell"></use>
+                    </svg>
+                    <span class="global__notification-count">6</span>
+                </div>
+
+                <div class="global__auth user">
+                    <div class="user__info">
+                        <div class="user__avatar">
+                            <img src="./images/avatar.webp" alt="ava"
+                                class="user__img">
+                        </div>
+                        <button class="user__dropdown-btn"> 
+                            <p class="user__name">Ronnie <span
+                                    class="user__second-name">Woodkin</span>
+                            </p> 
+                            <svg class="user__dropdown-icon">
+                                <use xlink:href="./svg/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </button>
+                        
+                    </div>
+                    <ul class="user__list">
+                        <li class="user__item">
+                            <a href="#!" class="user__link">
+                                <span class="user__icon-box">
+                                    <svg class="user__icon" data-name="user">
+                                        <use xlink:href="./svg/sprite.svg#user"></use>
+                                    </svg>
+                                </span> 
+                                <span class="user__link-name">Profile </span>
+                            </a>
+                        </li>
+                        <li class="user__item">
+                            <a href="#!" class="user__link">
+                                <span class="user__icon-box">
+                                    <svg class="user__icon">
+                                        <use xlink:href="./svg/sprite.svg#credit-card"></use>
+                                    </svg>
+                                </span>  
+                                <span class="user__link-name">Billing</span>
+                            </a>
+                        </li>
+                        <li class="user__item">
+                            <a href="#!" class="user__link">
+                                <span class="user__icon-box">
+                                    <svg class="user__icon">
+                                        <use xlink:href="./svg/sprite.svg#exit"></use>
+                                    </svg>
+                                </span>  
+                                <span class="user__link-name">Log out </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </header>
+            <main class="add-reason change"> 
+                <div class="add-reason__create">
+                    <div class="add-reason__top">
+                        <a href="./index.html" class="add-reason__back">Back</a>
+                        <h1 class="add-reason__title title">Return reasons</h1>  
+                    </div>
+                    <div class="add-reason__content content">
+                        <div class="content__left">
+                            <h2 class="content__left-title title__lvl2">Parameter</h2>
+                            <div class="content__left-new new">
+                                <div class="new__text">
+                                    <h3 class="new__title title__lvl3">Name the reason</h3>
+                                    <span class="new__inform">Max 30 chars</span>
+                                </div>
+                                <input type="text" class="new__input" maxlength="30" id="name-reason">
+                            </div>
+                            <div class="content__left-switch switch">
+                                <div class="switch__box">
+                                    <h3 class="switch__title title__lvl3">Allow Exchange</h3> 
+                                    <label class="checkbox-upgrade">
+                                        <input type="checkbox" class="main-checkbox" id="exchange-inp">
+                                        <span class="checkbox-upgrade-switch"
+                                            data-label-on="Yes" data-label-off="No"></span>
+                                    </label>
+                                </div>
+                                <div class="switch__box">
+                                    <h3 class="switch__title title__lvl3">Allow Return</h3> 
+                                    <label class="checkbox-upgrade">
+                                        <input type="checkbox" class="main-checkbox" id="return-inp">
+                                        <span class="checkbox-upgrade-switch"
+                                            data-label-on="Yes" data-label-off="No"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="content__left-collection collection">
+                                <h3 class="collection__title title__lvl3">Collection pictures</h3> 
+                                <div class="collection__options">
+                                    <div class="collection__item item-radio">
+                                        <input class="collection__radio input-radio"
+                                    type="radio" name="collection" id="yes">
+                                    <label for="yes" class="collection__label label-radio">
+                                        <span class="collection__input-circle circle-radio"></span>
+                                        Yes
+                                    </label>  
+                                    </div>
+                                    <div class="collection__item item-radio">
+                                        <input class="collection__radio input-radio"
+                                    type="radio" name="collection" id="no">
+                                    <label for="no" class="collection__label label-radio">
+                                        <span class="collection__input-circle circle-radio"></span>
+                                        No
+                                    </label>  
+                                    </div>
+                                    <div class="collection__item item-radio">
+                                        <input class="collection__radio input-radio"
+                                    type="radio" name="collection" id="multiple">
+                                    <label for="multiple" class="collection__label label-radio">
+                                        <span class="collection__input-circle circle-radio"></span>
+                                        Multiple
+                                    </label>  
+                                    </div> 
+                                </div>
+                                <div class="collection__options">
+                                    <div class="collection__checkbox checkbox__inner">
+                                        <input id="tag" type="checkbox"
+                                            class="collection__input checkbox__input">
+                                        <span class="collection__check checkbox__border">
+                                            <svg class="collection__check-icon checkbox__icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="tag"
+                                            class="collection__label checkbox__label">
+                                            Tag
+                                        </label> 
+                                    </div>
+                                    <div class="collection__checkbox checkbox__inner">
+                                        <input id="front" type="checkbox"
+                                            class="collection__input checkbox__input">
+                                        <span class="collection__check checkbox__border">
+                                            <svg class="collection__check-icon checkbox__icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="front"
+                                            class="collection__label checkbox__label">
+                                            Front
+                                        </label> 
+                                    </div>
+                                    <div class="collection__checkbox checkbox__inner">
+                                        <input id="back" type="checkbox"
+                                            class="collection__input checkbox__input">
+                                        <span class="collection__check checkbox__border">
+                                            <svg class="collection__check-icon checkbox__icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="back"
+                                            class="collection__label checkbox__label">
+                                            Back
+                                        </label> 
+                                    </div>
+                                    <div class="collection__checkbox checkbox__inner">
+                                        <input id="defect" type="checkbox"
+                                            class="collection__input checkbox__input">
+                                        <span class="collection__check checkbox__border">
+                                            <svg class="collection__check-icon checkbox__icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="defect"
+                                            class="collection__label checkbox__label">
+                                            Defect
+                                        </label> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__left-applicable applicable">
+                                <h3 class="applicable__title title__lvl3">Applicable products</h3> 
+                                <div class="applicable__options">
+                                    <div class="applicable__item item-radio">
+                                        <input class="applicable__radio input-radio"
+                                        type="radio" name="applicable" id="all">
+                                        <label for="all" class="applicable__label label-radio">
+                                        <span class="applicable__input-circle circle-radio"></span>
+                                        All
+                                        </label> 
+                                    </div>
+                                    <div class="applicable__item item-radio">
+                                        <input class="applicable__radio input-radio"
+                                        type="radio" name="applicable" id="selected">
+                                        <label for="selected" class="applicable__label label-radio">
+                                        <span class="applicable__input-circle circle-radio"></span>
+                                        Selected
+                                        </label> 
+                                    </div>    
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="content__right ">
+                            <h2 class="content__right-title title__lvl2">If the return reason is as this, then ask further question</h2>
+                            <div class="content__right-add add select">
+                                <button class="add__btn select__btn">Add reason</button>
+                                <svg class="add__icon select__icon">
+                                    <use xlink:href="./svg/sprite.svg#plus-2"></use>
+                                </svg> 
+                                    <ul class="add__list select__list">
+                                        <li class="add__item select__item"
+                                            data-value="Don’t like the fit" data-status="on">Don’t like the fit</li>
+                                        <li class="add__item select__item"
+                                            data-value="Too tight" data-status="on">Too tight</li>
+                                        <li class="add__item select__item"
+                                            data-value="Too loose" data-status="on">Too loose</li>
+                                        <li class="add__item select__item"
+                                            data-value="Don’t need" data-status="on">Don’t need</li>
+                                    </ul> 
+                            </div>
+                            <ul class="content__right-question question__list"> 
+                            </ul> 
+                            <textarea class="content__right-textarea" maxlength="90" placeholder="Other reasons"></textarea>
+                        </div>
+                    </div>
+                    <div class="add-reason__btns"> 
+                        <button class="add-reason__save">Save Reason</button>
+                    </div>
+                </div>
+                <div class="add-reason__commonly commonly">
+                    <h2 class="commonly__title title__lvl2">
+                        Common Reasons
+                    </h2>
+                    <ul class="commonly__list">
+                        <li class="commonly__item" data-reason="damage">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is damaged</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold during sales put more conditions for return
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="size">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items value is less than certain amont, don’t accept returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="wrong">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Wrong product received</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold overseas put more conditions for returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="defect">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is defective</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                Put more conditions for returns based on time since sold
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="damage">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is damaged</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold during sales put more conditions for return
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="size">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items value is less than certain amont, don’t accept returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="wrong">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Wrong product received</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold overseas put more conditions for returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="defect">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is defective</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                Put more conditions for returns based on time since sold
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="damage">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is damaged</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold during sales put more conditions for return
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="size">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items value is less than certain amont, don’t accept returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="wrong">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Wrong product received</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold overseas put more conditions for returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="defect">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is defective</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                Put more conditions for returns based on time since sold
+                            </p>
+                        </li> 
+                    </ul>
+                </div>
+            </main>
+            <div class="warning__wrapper">
+                <div class="warning__block">
+                    <svg class="warning__icon-close">
+                        <use xlink:href="./svg/sprite.svg#x"></use>
+                    </svg>
+                    <svg class="warning__icon-info">
+                        <use xlink:href="./svg/sprite.svg#warning"></use>
+                    </svg>
+                    <h3 class="warning__title">ERROR</h3>
+                    <p class="warning__desc">Lorem ipsum dolor sit amet,  consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <script src="./js/addReason.js"></script>
+    </body>
+</html>
