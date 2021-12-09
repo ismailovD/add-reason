@@ -1011,8 +1011,7 @@ body {
     color: var(--purple);
 }
 
-.new__input {
-
+.new__input { 
     width: 100%;
     border-radius: var(--border-radius-small);
     border: 2px solid var(--return-input-bg);
@@ -1177,11 +1176,11 @@ body {
 }
 
 .input-radio:checked+.label-radio .circle-radio {
-    border: 2px solid var(--light-blue)
+    border: 2px solid var(--blue)
 }
 
 .input-radio:checked+.label-radio .circle-radio:after {
-    background: var(--light-blue)
+    background: var(--blue)
 }
 
 .input-radio:checked:disabled+.label-radio .circle-radio {
@@ -1221,7 +1220,7 @@ body {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    border: 2px solid var(--return-input-bg);
+    border: 2px solid var(--blue);
     position: absolute;
     margin-right: 15px;
     left: 0;
@@ -1324,15 +1323,47 @@ body {
     cursor: pointer;
     padding-left: 30px
 }
-
+ 
 .applicable__options {
     display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
-
+.applicable__inputs {
+    display: flex; 
+}
 .applicable__item:not(:last-child) {
     margin-right: 33px;
 }
+.applicable__text-input { 
+    display: none;
+    width: 100%;
+    border-radius: var(--border-radius-small);
+    border: 2px solid var(--return-input-bg);
+    padding: 10px 15px;
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--purple);
+    margin-top: 19px; 
+    transition:  0.2s;  
+}
+.applicable__text-input.show {
+    display: block;
+}
+.applicable__text-input:focus {
+    outline: none;
+    border: 2px solid var(--purple);
+}
 
+.applicable__text-input::placeholder {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--purple);
+}
 .content__right {
     max-width: 490px;
     min-width: 300px;
@@ -1343,7 +1374,7 @@ body {
 
 .content__right-title {
     line-height: 25px;
-    margin-bottom: 29px;
+    margin-bottom: 8px;
     max-width: 250px;
     width: 100%;
 }
@@ -1655,7 +1686,22 @@ body {
     color: var(--purple)
 }
 
-
+.add-reason__btn-upgrade {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--light-blue);
+    border: none;
+    background: transparent;
+    cursor: pointer
+}
+.applicable .add-reason__btn-upgrade {
+    margin-right: 23px;
+}
+.content__right .add-reason__btn-upgrade {
+    margin-bottom: 8px;
+}
 .add-reason__back {
     font-family: var(--f600-lato);
     font-weight: 600;

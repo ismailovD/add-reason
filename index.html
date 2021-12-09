@@ -472,27 +472,32 @@
                             <div class="content__left-applicable applicable">
                                 <h3 class="applicable__title title__lvl3">Applicable products</h3> 
                                 <div class="applicable__options">
-                                    <div class="applicable__item item-radio">
-                                        <input class="applicable__radio input-radio"
-                                        type="radio" name="applicable" id="all">
-                                        <label for="all" class="applicable__label label-radio">
-                                        <span class="applicable__input-circle circle-radio"></span>
-                                        All
-                                        </label> 
-                                    </div>
-                                    <div class="applicable__item item-radio">
-                                        <input class="applicable__radio input-radio"
-                                        type="radio" name="applicable" id="selected">
-                                        <label for="selected" class="applicable__label label-radio">
-                                        <span class="applicable__input-circle circle-radio"></span>
-                                        Selected
-                                        </label> 
-                                    </div>    
+                                    <div class="applicable__inputs">
+                                        <div class="applicable__item item-radio">
+                                            <input class="applicable__radio input-radio"
+                                            type="radio" name="applicable" id="all" disabled>
+                                            <label for="all" class="applicable__label label-radio">
+                                            <span class="applicable__input-circle circle-radio"></span>
+                                            All
+                                            </label> 
+                                        </div>
+                                        <div class="applicable__item item-radio">
+                                            <input class="applicable__radio input-radio"
+                                            type="radio" name="applicable" id="selected" disabled>
+                                            <label for="selected" class="applicable__label label-radio">
+                                            <span class="applicable__input-circle circle-radio"></span>
+                                            Selected
+                                            </label> 
+                                        </div> 
+                                    </div>   
+                                    <button class="add-reason__btn-upgrade" id="applicable-upgrade">Upgrade</button>
                                 </div>
+                                <input type="text" placeholder="Enter text" class="applicable__text-input">
                             </div>
                         </div> 
                         <div class="content__right ">
                             <h2 class="content__right-title title__lvl2">If the return reason is as this, then ask further question</h2>
+                            <button class="add-reason__btn-upgrade">Upgrade</button>
                             <div class="content__right-add add select">
                                 <button class="add__btn select__btn">Add reason</button>
                                 <svg class="add__icon select__icon">

@@ -10,16 +10,16 @@ const   sideBarBtn = document.querySelector('.side-bar__btn'),
         sideBarSet = '.side-bar__settings',
         selectParent = '.select',
         selectItems = document.querySelectorAll('.select__item'),
-        addReasonContent = document.querySelector('.add-reason'),
-        renamePolicy = document.querySelector('.policy__edit-icon'),
-        namePolicy = document.querySelector('.policy__name'),
+        addReasonContent = document.querySelector('.add-reason'), 
         policyItems = document.querySelectorAll('.commonly__item'),
         policyScroll = document.querySelector('.commonly__list'),
         samplesAdd  = document.querySelectorAll('.commonly__item-plus'),
         reasonList = document.querySelector('.question__list'),
         saveReason = document.querySelector('.add-reason__save'),
         poperBg = document.querySelector('.warning__wrapper'),
-        poperClose = document.querySelector('.warning__close'),
+        poperClose = document.querySelector('.warning__close'), 
+        upgradeBtn = document.querySelector('#applicable-upgrade'),
+        applicableAddInput = document.querySelector('.applicable__text-input');
         body = document.querySelector('body');
         
 
@@ -229,3 +229,12 @@ samplesAdd.forEach(sample => {
         });
     })
 })
+ 
+upgradeBtn.addEventListener('click', () => {
+    applicableRadio.forEach(radio => {
+        radio.addEventListener('change', () => { 
+                applicableAddInput.classList.add('show')
+        })
+        radio.disabled = false;
+    })
+}) 
