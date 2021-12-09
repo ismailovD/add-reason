@@ -94,44 +94,45 @@
                         <span class="side-bar__count" data-count="0"></span>
                     </li>
                 </ul>
-                <div class="side-bar__settings ">
-                    <svg class="side-bar__icon">
-                        <use xlink:href="./svg/sprite.svg#settings"></use>
-                    </svg>
+                <div class="side-bar__settings "> 
                     <div class="side-bar__dropdown">
+                        <svg class="side-bar__icon">
+                            <use xlink:href="./svg/sprite.svg#settings"></use>
+                        </svg>
                         <span class="side-bar__dropdown-btn">Settings
                         </span>
                         <svg class="side-bar__dropdown-icon">
                             <use
                                 xlink:href="./svg/sprite.svg#arrow-down"></use>
                         </svg>
-                        <ul class="side-bar__dropdown-list">
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Profile</a>
-                            </li>
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Log out</a>
-                            </li>
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Log in</a>
-                            </li>
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Log out</a>
-                            </li>
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Upgrades</a>
-                            </li>
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Your stars</a>
-                            </li>
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Your Like`s</a>
-                            </li>
-                            <li class="side-bar__dropdown-item ">
-                                <a href="#!" class="side-bar__link global-item">Comments</a>
-                            </li>
-                        </ul>
+                        
                     </div>
+                    <ul class="side-bar__dropdown-list">
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Profile</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Log out</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Log in</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Log out</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Upgrades</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Your stars</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Your Like`s</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Comments</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <a href="#!" class="side-bar__link side-bar__help global-item">
@@ -212,12 +213,148 @@
             </div>
             </header>
             <main class="add-reason change"> 
-                <div class="add-reason__create">
-                    <div class="add-reason__top">
-                        <a href="./index.html" class="add-reason__back">Back</a>
-                        <h1 class="add-reason__title title">Return reasons</h1>  
-                    </div>
+                <div class="add-reason__commonly commonly">
+                    <h2 class="commonly__title title__lvl2">
+                        Common Reasons
+                    </h2>
+                    <ul class="commonly__list">
+                        <li class="commonly__item" data-reason="damage">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is damaged</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold during sales put more conditions for return
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="size">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items value is less than certain amont, don’t accept returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="wrong">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Wrong product received</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold overseas put more conditions for returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="defect">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is defective</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                Put more conditions for returns based on time since sold
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="damage">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is damaged</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold during sales put more conditions for return
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="size">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items value is less than certain amont, don’t accept returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="wrong">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Wrong product received</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold overseas put more conditions for returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="defect">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is defective</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                Put more conditions for returns based on time since sold
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="damage">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is damaged</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold during sales put more conditions for return
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="size">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items value is less than certain amont, don’t accept returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="wrong">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Wrong product received</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                If items are sold overseas put more conditions for returns
+                            </p>
+                        </li>
+                        <li class="commonly__item" data-reason="defect">
+                            <div class="commonly__item-top">
+                                <h3 class="commonly__item-title">Item is defective</h3>
+                                <svg class="commonly__item-plus">
+                                    <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                            </div>
+                            <p class="commonly__item-desc">
+                                Put more conditions for returns based on time since sold
+                            </p>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="add-reason__create"> 
                     <div class="add-reason__content content">
+                        <h1 class="add-reason__title title">Return reasons</h1>  
                         <div class="content__left">
                             <h2 class="content__left-title title__lvl2">Parameter</h2>
                             <div class="content__left-new new">
@@ -378,155 +515,21 @@
                         </div>
                     </div>
                     <div class="add-reason__btns"> 
+                        <a href="./index.html" class="add-reason__back">Back</a> 
                         <button class="add-reason__save">Save Reason</button>
-                    </div>
+                    </div>   
                 </div>
-                <div class="add-reason__commonly commonly">
-                    <h2 class="commonly__title title__lvl2">
-                        Common Reasons
-                    </h2>
-                    <ul class="commonly__list">
-                        <li class="commonly__item" data-reason="damage">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Item is damaged</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items are sold during sales put more conditions for return
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="size">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items value is less than certain amont, don’t accept returns
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="wrong">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Wrong product received</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items are sold overseas put more conditions for returns
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="defect">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Item is defective</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                Put more conditions for returns based on time since sold
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="damage">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Item is damaged</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items are sold during sales put more conditions for return
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="size">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items value is less than certain amont, don’t accept returns
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="wrong">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Wrong product received</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items are sold overseas put more conditions for returns
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="defect">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Item is defective</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                Put more conditions for returns based on time since sold
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="damage">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Item is damaged</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items are sold during sales put more conditions for return
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="size">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Size doesn’t fit</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items value is less than certain amont, don’t accept returns
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="wrong">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Wrong product received</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                If items are sold overseas put more conditions for returns
-                            </p>
-                        </li>
-                        <li class="commonly__item" data-reason="defect">
-                            <div class="commonly__item-top">
-                                <h3 class="commonly__item-title">Item is defective</h3>
-                                <svg class="commonly__item-plus">
-                                    <use xlink:href="./svg/sprite.svg#add"></use>
-                                </svg>
-                            </div>
-                            <p class="commonly__item-desc">
-                                Put more conditions for returns based on time since sold
-                            </p>
-                        </li> 
-                    </ul>
-                </div>
+                
             </main>
             <div class="warning__wrapper">
                 <div class="warning__block">
-                    <svg class="warning__icon-close">
-                        <use xlink:href="./svg/sprite.svg#x"></use>
-                    </svg>
-                    <svg class="warning__icon-info">
+                    <span class="warning__close">
+                        <svg class="warning__close-icon">
+                            <use xlink:href="./svg/sprite.svg#x"></use>
+                        </svg>
+                    </span>
+                    
+                    <svg class="warning__info-icon">
                         <use xlink:href="./svg/sprite.svg#warning"></use>
                     </svg>
                     <h3 class="warning__title">ERROR</h3>

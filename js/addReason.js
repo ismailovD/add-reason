@@ -1,8 +1,8 @@
 const   sideBarBtn = document.querySelector('.side-bar__btn'),
         sideBar = document.querySelector('.side-bar'), 
         pageContent =document.querySelector('.global__content'), 
-        dropdownWindow = document.querySelector('.side-bar__dropdown'),
-        dropdownBtn = document.querySelector('.side-bar__dropdown-btn'),
+        dropdownList = document.querySelector('.side-bar__settings'),
+        dropdownBtn = document.querySelector('.side-bar__dropdown'),
         visitedPage = document.querySelectorAll('.global-item'),
         userDropdown = document.querySelector('.global__auth'),
         userBtn = document.querySelector('.user__dropdown-btn'),
@@ -19,7 +19,7 @@ const   sideBarBtn = document.querySelector('.side-bar__btn'),
         reasonList = document.querySelector('.question__list'),
         saveReason = document.querySelector('.add-reason__save'),
         poperBg = document.querySelector('.warning__wrapper'),
-        poperClose = document.querySelector('.warning__icon-close'),
+        poperClose = document.querySelector('.warning__close'),
         body = document.querySelector('body');
         
 
@@ -30,14 +30,14 @@ sideBarBtn.addEventListener('click', () => {
             pageContent.style.marginLeft = "275px"; 
             addReasonContent.classList.add('change')
     }else {  
-        dropdownWindow.classList.remove('active')
+        dropdownList.classList.remove('active')
         pageContent.style.marginLeft = "65px";  
         addReasonContent.classList.remove('change')
     }
 }); 
 dropdownBtn.addEventListener('click', () => {
-    dropdownWindow.classList.toggle('active'); 
-    if(dropdownWindow.classList.contains('active')){
+    dropdownList.classList.toggle('active'); 
+    if(dropdownList.classList.contains('active')){
         sideBar.classList.add('change-height')
     }else sideBar.classList.remove('change-height')
 })
