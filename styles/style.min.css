@@ -259,7 +259,8 @@ body {
     background: var(--light-blue)
 }
 
-.side-bar__item.visited .side-bar__count {
+.side-bar__item.visited .side-bar__count { 
+    color: var(--main-input-bg);
     background: var(--light-blue)
 }
 
@@ -300,7 +301,7 @@ body {
     font-size: 12px;
     display: inline-block;
     padding: 5px 0;
-    text-align: center
+    text-align: center; 
 }
 
 .side-bar__count::after {
@@ -309,8 +310,8 @@ body {
     position: absolute;
     width: 6px;
     height: 6px;
-    top: -3px;
-    left: 75%;
+    top: 5px;
+    left: 70%;
     border-radius: 50%;
     background: var(--purple)
 }
@@ -537,7 +538,7 @@ body {
 .side-bar.active .side-bar__count {
     width: 24px;
     height: 24px;
-    padding: 5px;
+    padding: 5px; 
 }
 
 .side-bar__count::after {
