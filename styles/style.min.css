@@ -54,7 +54,10 @@
     --icon-bg: #F5F4FC;
     --poper-bg-opacity-50: rgba(57, 57, 57, 0.5);
     --thumb-color: #E9E8F3;
-    --disable-btn: #BDB9DC
+    --disable-btn: #BDB9DC;
+    --switch-gray: #DEDAFB;
+    --search-shadow:0px 4px 10px #E4E3F7;
+    --search-hover:#F7F6FF;
 }
 
 a,
