@@ -20,7 +20,23 @@ const   sideBarBtn = document.querySelector('.side-bar__btn'),
         poperClose = document.querySelector('.warning__close'), 
         upgradeBtn = document.querySelector('#applicable-upgrade'),
         applicableAddInput = document.querySelector('.applicable__text-input');
-        body = document.querySelector('body');
+        body = document.querySelector('body'),
+        globalSearch = document.querySelector('.global__search-input'),
+        globalSearchDropdown = document.querySelector('.global__search-dropdown');
+        
+globalSearch.addEventListener('input', () => { 
+    if(globalSearch.value.length > 0){
+        globalSearchDropdown.classList.add('active');
+        setTimeout(()=> {
+            globalSearchDropdown.classList.add('show');
+        }, 100)
+    }else {
+        globalSearchDropdown.classList.remove('show');
+        setTimeout(()=> {
+            globalSearchDropdown.classList.remove('active');
+        }, 100)
+    }
+}) 
         
 
 
