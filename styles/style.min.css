@@ -647,6 +647,9 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -674,7 +677,7 @@ body {
 }
 .global__search-dropdown {
     position: absolute;
-    top: 101%;
+    top: 105%;
     left: 0;
     width: 100%;
     z-index: 15;  
