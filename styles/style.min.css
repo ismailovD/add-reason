@@ -94,8 +94,7 @@ body {
     -o-transition: margin-left 0.2s;
     transition: margin-left 0.2s;
     margin-left: 275px;  
-    max-width: 1400px;
-    width: 100%;
+    max-width: 1400px;  
 }
 
 .side-bar__btn {
