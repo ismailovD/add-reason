@@ -93,8 +93,7 @@ body {
     -webkit-transition: margin-left 0.2s;
     -o-transition: margin-left 0.2s;
     transition: margin-left 0.2s;
-    margin-left: 275px;  
-    max-width: 1400px;  
+    margin-left: 275px;   
 }
 
 .side-bar__btn {
@@ -1066,9 +1065,7 @@ body {
     border-radius: var(--border-radius-big);
     overflow: hidden;
     padding: 20px 30px 35px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+   width: 100%;
 }
 
 .add-reason__top {
@@ -1818,8 +1815,7 @@ body {
     margin-bottom: 9px
 }
 
-.commonly__list {
-    max-width: 300px;
+.commonly__list { 
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -2081,6 +2077,9 @@ body {
 
     .global__footer {
         padding-bottom: 60px
+    }
+    .commonly__list {
+        max-width: 300px; 
     }
 }
 
